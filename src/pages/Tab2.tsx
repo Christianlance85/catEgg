@@ -1,8 +1,8 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 // import ExploreContainer from '../components/ExploreContainer';
 import './Tab2.css';
-import LiteYouTubeEmbed from 'react-lite-youtube-embed';
-import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
+import YouTube from 'react-youtube';
+
 
 const Tab2: React.FC = () => {
   return (
@@ -18,8 +18,10 @@ const Tab2: React.FC = () => {
             <IonTitle size="large">Podcasts</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <LiteYouTubeEmbed
-          id="XTV3lO5w6aE"
+        <YouTube
+          opts={{ width: "100%", height: "40%" }}
+          style={{ width: "100%", height: "100%" }}
+          videoId="XTV3lO5w6aE"
           title="What’s new in Material Design for the web (Chrome Dev Summit 2019)"
         />
         {/* <ExploreContainer name="Podcasts page" /> */}
