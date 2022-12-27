@@ -1,8 +1,15 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 
 const Tab1: React.FC = () => {
+
+
+  const divStyle: object = {
+    display: "flex",
+    width: "100%",
+    height: "100%"
+  };
+
   return (
     <IonPage>
       <IonHeader>
@@ -16,9 +23,9 @@ const Tab1: React.FC = () => {
             <IonTitle size="large">Articles</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Articles page" />
-      </IonContent>
-    </IonPage>
+        <iframe src="https://wisportsheroics.com/" title="wiSportsIframe" style={divStyle}></iframe>
+    </IonContent>
+    </IonPage >
   );
 };
 
